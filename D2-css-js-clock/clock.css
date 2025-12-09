@@ -1,0 +1,154 @@
+html {
+  background-color: #018ded;
+  block-size: cover;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clock {
+  width: 35rem;
+  height: 35rem;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-number {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  z-index: 10;
+}
+
+.clock-number ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clock-number li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.clock-number li:nth-child(1) {
+  transform: rotate(30deg) translateY(-160px) rotate(-30deg);
+}
+
+.clock-number li:nth-child(2) {
+  transform: rotate(60deg) translateY(-160px) rotate(-60deg);
+}
+
+.clock-number li:nth-child(3) {
+  transform: rotate(90deg) translateY(-160px) rotate(-90deg);
+}
+
+.clock-number li:nth-child(4) {
+  transform: rotate(120deg) translateY(-160px) rotate(-120deg);
+}
+
+.clock-number li:nth-child(5) {
+  transform: rotate(150deg) translateY(-160px) rotate(-150deg);
+}
+
+.clock-number li:nth-child(6) {
+  transform: rotate(180deg) translateY(-160px) rotate(-180deg);
+}
+
+.clock-number li:nth-child(7) {
+  transform: rotate(210deg) translateY(-160px) rotate(-210deg);
+}
+
+.clock-number li:nth-child(8) {
+  transform: rotate(240deg) translateY(-160px) rotate(-240deg);
+}
+
+.clock-number li:nth-child(9) {
+  transform: rotate(270deg) translateY(-160px) rotate(-270deg);
+}
+
+.clock-number li:nth-child(10) {
+  transform: rotate(300deg) translateY(-160px) rotate(-300deg);
+}
+
+.clock-number li:nth-child(11) {
+  transform: rotate(330deg) translateY(-160px) rotate(-330deg);
+}
+
+.clock-number li:nth-child(12) {
+  transform: rotate(0deg) translateY(-160px) rotate(0deg);
+}
+
+.hand {
+  width: 50%;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+  background: red;
+  height: 5px;
+  width: 40%;
+  left: 10%;
+}
+
+.min-hand {
+  height: 10px;
+  border-radius: 15px;
+  width: 35%;
+  left: 15%;
+}
+
+.hour-hand {
+  height: 15px;
+  width: 30%;
+  border-radius: 16px;
+  left: 20%;
+}
+
+.current-time {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  border: 8px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
