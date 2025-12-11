@@ -36,7 +36,7 @@ setInterval(setDate, 1000);
 
 function currentTime(){
     const currentTime = document.querySelector('.current-time')
-    const now = new Date().toLocaleTimeString(); // 11:18:48 AM
+    const now = new Date().toLocaleTimeString(); 
     console.log(now);
     currentTime.innerText = `${now}`
 }
